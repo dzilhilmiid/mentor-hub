@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { HashRouter, Routes, Route } from "react-router-dom"
 import Home from "./pages/Home"
 import Login from "./pages/Login"
 import Register from "./pages/Register"
@@ -10,7 +10,7 @@ import Book from "./pages/Book"
 
 function App() {
     return (
-      <BrowserRouter basename="/mentor-hub">
+      <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -21,7 +21,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/book" element={<Book />} />
       </Routes>
-      </BrowserRouter>
+      </HashRouter>
     )
 }
 
