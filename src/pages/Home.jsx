@@ -1,5 +1,5 @@
-import "../styles/home.css"
 import { Link } from "react-router-dom"
+import "../styles/home.css"
 
 function Home () {
     return (
@@ -8,14 +8,14 @@ function Home () {
         <h1>MentorHub</h1>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/mentor">Mentor</a></li>
-                <li><a href="/class">Kelas</a></li>
-                <li><a href="/about">Tentang</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="/book">Book</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/mentor">Mentor</Link></li>
+                <li><Link to="/class">Kelas</Link></li>
+                <li><Link to="/about">Tentang</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
+                <li><Link to="/book">Book</Link></li>
             </ul>
-            <a href="/login">Masuk Sekarang</a>
+            <Link to="/login">Masuk Sekarang</Link>
         </nav>
     </header>
 
@@ -29,8 +29,8 @@ function Home () {
                     Tingkatkan skill Anda dengan bimbingan mentor berpengalaman di bidang teknologi, bisnis, dan desain
                 </p>
                 <div className="home-button">
-                    <a href="">Mulai Sekarang</a>
-                    <a href="">Lihat Program</a>
+                    <Link to="">Mulai Sekarang</Link>
+                    <Link to="">Lihat Program</Link>
                 </div>
             </div>
             <div className="home-above-right">
@@ -94,12 +94,12 @@ function Home () {
         </div>
         <div className="footer2">
             <h3>Quick Link</h3>
-            <a href="/">Home</a>
-            <a href="/mentor">Mentor</a>
-            <a href="/class">Kelas</a>
-            <a href="/about">Tentang</a>
-            <a href="/contact">Contact</a>
-            <a href="/book">Book</a>
+            <Link to="/">Home</Link>
+            <Link to="/mentor">Mentor</Link>
+            <Link to="/class">Kelas</Link>
+            <Link to="/about">Tentang</Link>
+            <Link to="/contact">Contact</Link>
+            <Link to="/book">Book</Link>
         </div>
         <div className="footer3">
             <h3>Kontak</h3>

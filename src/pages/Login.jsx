@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import"../styles/login.css"
 
 function Login() {
@@ -7,14 +8,14 @@ function Login() {
         <h1>MentorHub</h1>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/mentor">Mentor</a></li>
-                <li><a href="/class">Kelas</a></li>
-                <li><a href="/about">Tentang</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="/book">Book</a></li>
+               <li><Link to="/">Home</Link></li>
+                <li><Link to="/mentor">Mentor</Link></li>
+                <li><Link to="/class">Kelas</Link></li>
+                <li><Link to="/about">Tentang</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
+                <li><Link to="/book">Book</Link></li>
             </ul>
-            <a href="/register">Daftar Sekarang</a>
+            <Link to="/register">Daftar Sekarang</Link>
         </nav>
     </header>
     <main>

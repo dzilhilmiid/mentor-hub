@@ -9,8 +9,8 @@ import Contact from "./pages/Contact"
 import Book from "./pages/Book"
 
 function App() {
-    return (
-      <HashRouter>
+  return (
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -21,8 +21,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/book" element={<Book />} />
       </Routes>
-      </HashRouter>
-    )
+    </HashRouter>
+  )
 }
 
 export default App

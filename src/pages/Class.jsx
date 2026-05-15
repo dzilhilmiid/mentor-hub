@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import "../styles/class.css"
 
 function Class () {
@@ -7,14 +8,14 @@ function Class () {
         <h1>MentorHub</h1>
         <nav>
             <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/mentor">Mentor</a></li>
-                <li><a href="/class">Kelas</a></li>
-                <li><a href="/about">Tentang</a></li>
-                <li><a href="/contact">Contact</a></li>
-                <li><a href="/book">Book</a></li>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/mentor">Mentor</Link></li>
+                <li><Link to="/class">Kelas</Link></li>
+                <li><Link to="/about">Tentang</Link></li>
+                <li><Link to="/contact">Contact</Link></li>
+                <li><Link to="/book">Book</Link></li>
             </ul>
-            <a href="/login">Masuk Sekarang</a>
+            <Link to="/login">Masuk Sekarang</Link>
         </nav>
     </header>
 
@@ -168,7 +169,7 @@ function Class () {
             <a href="/contact">Contact</a>
             <a href="/book">Book</a>
         </div>
-        <div classNameName="footer3">
+        <div className="footer3">
             <h3>Kontak</h3>
             <p>📧 support@mentorhub.com</p>
             <p>📱 +62 812-0000-0000</p>
