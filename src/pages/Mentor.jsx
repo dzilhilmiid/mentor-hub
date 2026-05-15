@@ -1,0 +1,139 @@
+import"../styles/mentor.css"
+function Mentor() {
+    return (
+        <>
+        <header className="mentor-header">
+        <h1>MentorHub</h1>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/mentor">Mentor</a></li>
+                <li><a href="/class">Kelas</a></li>
+                <li><a href="/about">Tentang</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/book">Book</a></li>
+            </ul>
+            <a href="/login">Masuk Sekarang</a>
+        </nav>
+    </header>
+
+    <section className="mentor">
+        <div className="mentor-above">
+            <h2>Daftar Mentor</h2>
+            <p>Belajar langsung dari mentor profesional dan berpengalaman
+            di bidang teknologi, desain, dan bisnis digital.</p>
+        </div>
+        <div className="mentor-list">
+            <div className="mentor-card">
+                <div className="mentor-card-img">
+                    <img src="https://i.pravatar.cc/300?img=11" alt="" />
+                </div>
+                <div className="mentor-card-name">
+                    <h3>Andi rajajaja</h3>
+                </div>
+                <div className="mentor-card-class">
+                    <p>Digital Marketing</p>
+                </div>
+                <div className="mentor-card-desc">
+                    <p>
+                       Spesialis digital advertising dan social media branding
+                       untuk meningkatkan penjualan bisnis online.
+                    </p>
+                </div>
+                <div className="mentor-card-footer">
+                    <p>⭐ 4.8 | 90K+ mentee</p>
+                    <button>Lihat profil</button>
+                </div>
+            </div>
+            <div className="mentor-card">
+                <div className="mentor-card-img">
+                    <img src="https://i.pravatar.cc/300?img=12" alt="" />
+                </div>
+                <div className="mentor-card-name">
+                    <h3>Salsa blablabla</h3>
+                </div>
+                <div className="mentor-card-class">
+                    <p>Frontend Developer</p>
+                </div>
+                <div className="mentor-card-desc">
+                    <p>
+                        Mentor frontend modern dengan fokus pada React.js,
+                        Tailwind CSS, dan responsive website design.
+                    </p>
+                </div>
+                <div className="mentor-card-footer">
+                    <p>⭐ 4.9 | 99K + mentee</p>
+                    <button>Lihat profil</button>
+                </div>
+            </div>
+            <div className="mentor-card">
+                <div className="mentor-card-img">
+                    <img src="https://i.pravatar.cc/300?img=13" alt="" />
+                </div>
+                <div className="mentor-card-name">
+                    <h3>Amel songopitu</h3>
+                </div>
+                <div className="mentor-card-class">
+                    <p>Backend Developer</p>
+                </div>
+                <div className="mentor-card-desc">
+                    <p>
+                        Berpengalaman membangun REST API dan sistem backend
+                        menggunakan Node.js, Express, dan MongoDB.
+                    </p>
+                </div>
+                <div className="mentor-card-footer">
+                    <p>⭐ 4.7 | 84K+ mentee</p>
+                    <button>Lihat profil</button>
+                </div>
+            </div>
+            <div className="mentor-card">
+                <div className="mentor-card-img">
+                    <img src="https://i.pravatar.cc/300?img=14" alt="" />
+                </div>
+                <div className="mentor-card-name">
+                    <h3>Bambang wolulas</h3>
+                </div>
+                <div className="mentor-card-class">
+                    <p>Fullstack Developer</p>
+                </div>
+                <div className="mentor-card-desc">
+                    <p>
+                        Fullstack engineer yang membantu mentee membangun
+            aplikasi web dari frontend hingga backend.
+                    </p>
+                </div>
+                <div className="mentor-card-footer">
+                    <p>⭐ 5.0 | 201K+ mentee</p>
+                    <button>Lihat profil</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer className="footer">
+        <div className="footer1">
+            <h2>MentorHub</h2>
+            <p>Platform yang menghubungkan mentee dengan mentor berpengalaman untuk mempercepat perkembangan karier dan skill.</p>
+        </div>
+        <div className="footer2">
+            <h3>Quick Link</h3>
+            <a href="/">Home</a>
+            <a href="/mentor">Mentor</a>
+            <a href="/class">Kelas</a>
+            <a href="/about">Tentang</a>
+            <a href="/contact">Contact</a>
+            <a href="/book">Book</a>
+        </div>
+        <div className="footer3">
+            <h3>Kontak</h3>
+            <p>📧 support@mentorhub.com</p>
+            <p>📱 +62 812-0000-0000</p>
+            <p>📍 Indonesia</p>
+        </div>
+    </footer>
+        </>
+    )
+}
+
+export default Mentor

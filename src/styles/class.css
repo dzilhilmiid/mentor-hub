@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --primary:#9196FF;
+    --primary-dark:#4338ca;
+    --dark:#111827;
+    --gray:#6b7280;
+    --light:#f9fafb;
+    --white:#ffffff;
+    --shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:var(--light);
+    color:var(--dark);
+    line-height:1.6;
+}
+
+.class-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 100px;
+    background:var(--white);
+    box-shadow:0 2px 10px rgba(0,0,0,0.05);
+    position:sticky;
+    top:0;
+    z-index:100;
+    border: 1px solid var(--primary-dark);
+}
+
+.class-header h1{
+    color:var(--primary);
+    font-size:30px;
+}
+
+.class-header nav{
+    display:flex;
+    align-items:center;
+    gap:30px;
+}
+
+.class-header nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+.class-header nav ul li a{
+    text-decoration:none;
+    color:var(--dark);
+    font-weight:500;
+    transition:0.3s;
+}
+
+.class-header nav ul li a:hover{
+    color:var(--primary);
+}
+
+.class-header nav > a{
+    text-decoration:none;
+    background:var(--primary);
+    color:var(--white);
+    padding:10px 20px;
+    border-radius:10px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.class-header nav > a:hover{
+    background:var(--primary-dark);
+    color: var(--white);
+}
+
+.class-above{
+    background-color: var(--primary);
+    display:block;
+    align-items:center;
+    padding:40px 100px;
+    border: 1px solid var(--primary-dark);
+    border-top: none;
+}
+
+.class-above h2 {
+    color: var(--white);
+    font-size:80px;
+    text-align: center;
+    line-height:1;
+}
+
+.class-above p {
+    color: var(--dark);
+    font-size:18px;
+    text-align: center;
+}
+
+.class-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 100px;
+}
+
+.class-card{
+    background: var(--white);
+    border: 1px solid var(--gray);
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(15, 23, 42, 0.08);
+    transition: 0.35s ease;
+}
+
+.class-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+}
+
+.class-card-img{
+    overflow: hidden;
+}
+
+.class-card-img img{
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    transition: 0.4s ease;
+}
+
+.class-card:hover .class-card-img img{
+    transform: scale(1.05);
+}
+
+.class-card-content{
+    padding: 0 10px 10px;
+}
+
+.class-category p{
+    display: inline-block;
+    background: var(--primary);
+    color: var(--primary-dark);
+    padding: 4px 10px;
+    border-radius: 100px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.class-title{
+    margin-top: 10px;
+}
+
+.class-title h3{
+    font-size: 16px;
+    color: var(--dark);
+    line-height: 1.1;
+}
+
+.class-desc{
+    margin-top: 10px;
+}
+
+.class-desc p{
+    color: var(--gray);
+    line-height: 1.2;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+button{
+    border: none;
+    outline: none;
+    background: var(--primary-dark);
+    color: var(--white);
+    padding: 8px 16px;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: 0.3s ease;
+    display: block;
+    margin: 10px auto 0;
+}
+
+button:hover{
+    transform: scale(1.05);
+    opacity: 0.95;
+}
+
+.class-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #f59e0b;
+    font-weight: 600;
+}
+
+.footer{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:50px;
+    background:var(--dark);
+    color:var(--white);
+    padding:10px 100px;
+}
+
+.footer h2,
+.footer h3{
+    color: var(--white);
+}
+
+.footer p{
+    color:var(--gray);
+    font-size: 14px;
+}
+
+.footer p:hover {
+    color:var(--white);
+}
+
+.footer2{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:8px 10px;
+}
+
+.footer2 h3{
+    grid-column:1 / -1;
+}
+
+.footer2 a{
+    text-decoration:none;
+    color:var(--gray);
+    font-size: 14px;
+    transition:0.3s;
+}
+
+.footer2 a:hover{
+    color:var(--white);
+}
