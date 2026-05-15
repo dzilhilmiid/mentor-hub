@@ -10,7 +10,7 @@ import Book from "./pages/Book"
 
 function App() {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename="/mentor-hub">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
