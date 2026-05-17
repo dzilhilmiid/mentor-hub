@@ -29,8 +29,8 @@ function Home () {
                     Tingkatkan skill Anda dengan bimbingan mentor berpengalaman di bidang teknologi, bisnis, dan desain
                 </p>
                 <div className="home-button">
-                    <Link to="">Mulai Sekarang</Link>
-                    <Link to="">Lihat Program</Link>
+                    <Link to="/book">Mulai Sekarang</Link>
+                    <Link to="/class">Lihat Program</Link>
                 </div>
             </div>
             <div className="home-above-right">

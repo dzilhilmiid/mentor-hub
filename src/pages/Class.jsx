@@ -30,7 +30,7 @@ function Class () {
     <div className="class-list">
         <div className="class-card">
             <div className="class-card-img">
-                <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085"
+                <img src="./public/frontend.jfif"
                 alt="" />
             </div>
             <div className="class-card-content">
@@ -61,7 +61,7 @@ function Class () {
         </div>
         <div className="class-card">
             <div className="class-card-img">
-                <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c"
+                <img src="./public/backend.avif"
                 alt="" />
             </div>
             <div className="class-card-content">
@@ -92,7 +92,7 @@ function Class () {
         </div>
         <div className="class-card">
             <div className="class-card-img">
-                <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+                <img src="./public/fullstack.png"
                 alt="" />
             </div>
             <div className="class-card-content">
@@ -123,7 +123,7 @@ function Class () {
         </div>
         <div className="class-card">
             <div className="class-card-img">
-                <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f"
+                <img src="./public/digital.jfif"
                 alt="" />
             </div>
             <div className="class-card-content">
