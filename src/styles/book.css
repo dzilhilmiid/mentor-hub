@@ -265,3 +265,209 @@ nav > a:hover{
 .footer2 a:hover{
     color:var(--white);
 }
+
+/* ================= RESPONSIVE ================= */
+
+/* TABLET */
+@media (max-width: 992px){
+
+    /* HEADER */
+    .book-header{
+        padding:15px 40px;
+    }
+
+    nav{
+        gap:20px;
+    }
+
+    nav ul{
+        gap:20px;
+    }
+
+    /* BOOKING */
+    .booking{
+        padding:40px;
+    }
+
+    .booking-container{
+        grid-template-columns:1fr;
+    }
+
+    .transaction-box{
+        width:100%;
+    }
+
+    .payment-methods{
+        grid-template-columns:repeat(auto-fit, minmax(150px,1fr));
+    }
+
+    .booking-title h2{
+        font-size:32px;
+    }
+
+    .booking-title p{
+        font-size:15px;
+        line-height:1.5;
+    }
+
+    /* FOOTER */
+    .footer{
+        grid-template-columns:1fr;
+        gap:30px;
+        padding:40px;
+    }
+}
+
+
+/* MOBILE */
+@media (max-width: 768px){
+
+    /* HEADER */
+    .book-header{
+        flex-direction:column;
+        gap:15px;
+        padding:15px 20px;
+    }
+
+    .book-header h1{
+        font-size:24px;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+        width:100%;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    nav > a{
+        width:100%;
+        text-align:center;
+    }
+
+    /* BOOKING */
+    .booking{
+        padding:40px 20px;
+    }
+
+    .booking-title h2{
+        font-size:28px;
+        line-height:1.2;
+    }
+
+    .booking-title p{
+        font-size:14px;
+        line-height:1.5;
+    }
+
+    .booking-container{
+        grid-template-columns:1fr;
+        gap:20px;
+    }
+
+    .booking-form,
+    .transaction-box{
+        padding:20px;
+    }
+
+    .input-group label{
+        font-size:14px;
+    }
+
+    .input-group input,
+    .input-group select{
+        font-size:14px;
+        padding:10px;
+    }
+
+    .payment-methods{
+        grid-template-columns:1fr;
+    }
+
+    .payment-card{
+        width:100%;
+    }
+
+    .booking-form button{
+        width:100%;
+        padding:12px;
+    }
+
+    /* FOOTER */
+    .footer{
+        padding:40px 20px;
+    }
+
+    .footer2{
+        grid-template-columns:1fr;
+    }
+}
+
+
+/* SMALL MOBILE */
+@media (max-width: 480px){
+
+    /* HEADER */
+    .book-header h1{
+        font-size:22px;
+    }
+
+    nav ul{
+        gap:10px;
+    }
+
+    nav ul li a{
+        font-size:14px;
+    }
+
+    nav > a{
+        font-size:14px;
+        padding:10px;
+    }
+
+    /* BOOKING */
+    .booking-title h2{
+        font-size:24px;
+    }
+
+    .booking-title p{
+        font-size:13px;
+    }
+
+    .booking-form,
+    .transaction-box{
+        padding:15px;
+    }
+
+    .payment-section h3,
+    .transaction-box h3{
+        font-size:16px;
+    }
+
+    .transaction-item{
+        font-size:14px;
+    }
+
+    .transaction-item.total{
+        font-size:15px;
+    }
+
+    .booking-form button{
+        font-size:14px;
+    }
+
+    /* FOOTER */
+    .footer{
+        gap:20px;
+    }
+
+    .footer p,
+    .footer2 a{
+        font-size:13px;
+    }
+}

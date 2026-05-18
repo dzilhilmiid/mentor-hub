@@ -492,6 +492,8 @@ button:hover{
     color:var(--white);
 }
 
+/* ================= RESPONSIVE ================= */
+
 @media(max-width:992px){
 
     .class-header{
@@ -533,8 +535,9 @@ button:hover{
 @media(max-width:768px){
 
     .class-header{
+        flex-direction:column;
+        gap:15px;
         padding:15px 20px;
-        text-align:center;
     }
 
     .class-header h1{
@@ -542,15 +545,15 @@ button:hover{
     }
 
     .class-header nav{
+        flex-direction:column;
+        gap:15px;
         width:100%;
     }
 
     .class-header nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
         gap:15px;
-    }
-
-    .class-header nav ul li a{
-        font-size:14px;
     }
 
     .class-header nav > a{

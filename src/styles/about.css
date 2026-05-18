@@ -270,59 +270,227 @@ body{
 .footer2 a:hover{
     color:var(--white);
 }
+/* ================= RESPONSIVE ================= */
 
-/* RESPONSIVE */
-@media(max-width: 992px){
+/* TABLET */
+@media(max-width:992px){
 
-    .header{
-        padding: 20px 40px;
-        flex-direction: column;
-        gap: 20px;
+    .about-header{
+        padding:15px 40px;
+        flex-direction:column;
+        gap:20px;
     }
 
-    .header nav{
-        flex-direction: column;
+    .about-header nav{
+        flex-direction:column;
+        gap:15px;
     }
 
-    .about{
-        padding: 50px 40px;
+    .about-header nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .about-above{
+        padding:40px;
+    }
+
+    .about-above h2{
+        font-size:50px;
     }
 
     .about-vision{
-        flex-direction: column;
+        padding:40px;
+        display:grid;
+        grid-template-columns:repeat(2,1fr);
+        gap:20px;
+    }
+
+    .vision-card{
+        width:100%;
+    }
+
+    .about-feature{
+        padding:0 40px;
     }
 
     .about-feature-list{
-        flex-direction: column;
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        width:100%;
+    }
+
+    .about-feature-card{
+        width:100%;
+    }
+
+    .about-team{
+        padding:40px;
+    }.about-team-list{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .about-team-card{
+        max-width:240px;
+        padding:18px;
+    }
+
+    .about-team-card img{
+        width:80px;
+        height:80px;
     }
 
     .footer{
-        padding: 50px 40px;
-        flex-direction: column;
+        grid-template-columns:1fr;
+        padding:40px;
+        gap:30px;
     }
 }
 
-@media(max-width: 600px){
 
-    .header nav ul{
-        flex-wrap: wrap;
-        justify-content: center;
+/* MOBILE */
+@media(max-width:768px){
+
+    .about-header{
+        flex-direction:column;
+        gap:15px;
+        padding:15px 20px;
     }
 
-    .about-hero h1{
-        font-size: 38px;
+    .about-header h1{
+        font-size:24px;
+    }
+
+    .about-header nav{
+        flex-direction:column;
+        gap:15px;
+        width:100%;
+    }
+
+    .about-header nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+    .about-header nav > a{
+        width:100%;
+        text-align:center;
+    }
+    
+    .about-above{
+        padding:30px 20px;
+    }
+
+    .about-above h2{
+        font-size:36px;
+        line-height:1.2;
+    }
+
+    .about-above p{
+        font-size:14px;
+    }
+
+    .about-vision{
+        padding:20px;
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:15px;
+    }
+
+    .vision-card{
+        width:100%;
+    }
+
+    .about-feature{
+        padding:0 20px;
+    }
+
+    .about-feature-list{
+        display:flex;
+        flex-direction:column;
+        gap:20px;
+        width:100%;
+    }
+
+    .about-feature-card{
+        width:100%;
+        max-width:none;
+    }
+
+    .about-team{
+        padding:20px;
+    }
+
+    .about-team-list{
+        grid-template-columns:repeat(2,1fr);
+        gap:15px;
+    }
+
+    .about-team-card{
+        max-width:200px;
+        padding:15px;
+    }
+
+    .about-team-card img{
+        width:70px;
+        height:70px;
+    }
+
+    .about-team-card h3{
+        font-size:16px;
+    }
+
+    .about-team-card p{
+        font-size:13px;
+    }
+
+    .footer{
+        grid-template-columns:1fr;
+        padding:30px 20px;
+        text-align:center;
+    }
+
+    .footer2{
+        grid-template-columns:1fr;
+    }
+}
+
+
+/* SMALL MOBILE */
+@media(max-width:480px){
+
+    .about-above h2{
+        font-size:28px;
     }
 
     .about-feature h2,
     .about-team h2{
-        font-size: 30px;
+        font-size:22px;
     }
 
-    .about{
-        padding: 40px 20px;
+    .vision-card h2,
+    .about-feature-card h3,
+    .about-team-card h3{
+        font-size:15px;
     }
 
-    .footer{
-        padding: 40px 20px;
+    .vision-card p,
+    .about-feature-card p,
+    .about-team-card p{
+        font-size:13px;
+    }
+
+    .about-vision{
+        grid-template-columns:1fr;
+    }
+
+    .about-team-list{
+        grid-template-columns:1fr;
+    }
+
+    .about-team-card{
+        max-width:100%;
     }
 }

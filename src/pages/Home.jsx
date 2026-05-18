@@ -1,7 +1,16 @@
 import { Link } from "react-router-dom"
+import { useEffect } from "react"
 import "../styles/home.css"
 
 function Home () {
+
+    useEffect(() => {
+        fetch("http://localhost:5000")
+        .then(res => res.text())
+        .then(data => {
+            console.log(data)
+        })
+    }, [])
     return (
         <>
     <header className="home-header">
@@ -22,7 +31,7 @@ function Home () {
     <section className="home">
         <div className="home-above">
             <div className="home-above-left">
-                <h1>Belajar Lansung
+                <h1>Belajar Langsung
                     dari Mentor Profesional
                 </h1>
                 <p>
