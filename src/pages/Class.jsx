@@ -12,8 +12,8 @@ function Class () {
                 <li><Link to="/mentor">Mentor</Link></li>
                 <li><Link to="/class">Kelas</Link></li>
                 <li><Link to="/about">Tentang</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
-                <li><Link to="/book">Book</Link></li>
+                <li><Link to="/contact">Kontak</Link></li>
+                <li><Link to="/book">Pesan</Link></li>
             </ul>
             <Link to="/login">Masuk Sekarang</Link>
         </nav>
@@ -30,7 +30,7 @@ function Class () {
     <div className="class-list">
         <div className="class-card">
             <div className="class-card-img">
-                <img src="./public/frontend.jfif"
+                <img src={`${import.meta.env.BASE_URL}frontend.jfif`}
                 alt="" />
             </div>
             <div className="class-card-content">
@@ -61,7 +61,7 @@ function Class () {
         </div>
         <div className="class-card">
             <div className="class-card-img">
-                <img src="./public/backend.avif"
+                <img src={`${import.meta.env.BASE_URL}backend.avif`}
                 alt="" />
             </div>
             <div className="class-card-content">
@@ -92,7 +92,7 @@ function Class () {
         </div>
         <div className="class-card">
             <div className="class-card-img">
-                <img src="./public/fullstack.png"
+                <img src={`${import.meta.env.BASE_URL}fullstack.png `}
                 alt="" />
             </div>
             <div className="class-card-content">
@@ -123,7 +123,7 @@ function Class () {
         </div>
         <div className="class-card">
             <div className="class-card-img">
-                <img src="./public/digital.jfif"
+                <img src={`${import.meta.env.BASE_URL}digital.jfif`}
                 alt="" />
             </div>
             <div className="class-card-content">

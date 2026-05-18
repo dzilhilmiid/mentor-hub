@@ -13,8 +13,8 @@ function Contact() {
                 <li><Link to="/mentor">Mentor</Link></li>
                 <li><Link to="/class">Kelas</Link></li>
                 <li><Link to="/about">Tentang</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
-                <li><Link to="/book">Book</Link></li>
+                <li><Link to="/contact">Kontak</Link></li>
+                <li><Link to="/book">Pesan</Link></li>
             </ul>
             <Link to="/login">Masuk Sekarang</Link>
         </nav>

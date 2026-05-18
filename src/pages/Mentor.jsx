@@ -12,8 +12,8 @@ function Mentor() {
                 <li><Link to="/mentor">Mentor</Link></li>
                 <li><Link to="/class">Kelas</Link></li>
                 <li><Link to="/about">Tentang</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
-                <li><Link to="/book">Book</Link></li>
+                <li><Link to="/contact">Kontak</Link></li>
+                <li><Link to="/book">Pesan</Link></li>
             </ul>
             <Link to="/login">Masuk Sekarang</Link>
         </nav>
@@ -28,7 +28,7 @@ function Mentor() {
         <div className="mentor-list">
             <div className="mentor-card">
                 <div className="mentor-card-img">
-                    <img src="https://i.pravatar.cc/300?img=11" alt="" />
+                    <img src="https://i.pravatar.cc/304" alt="" />
                 </div>
                 <div className="mentor-card-name">
                     <h3>Andi rajajaja</h3>
@@ -49,7 +49,7 @@ function Mentor() {
             </div>
             <div className="mentor-card">
                 <div className="mentor-card-img">
-                    <img src="https://i.pravatar.cc/300?img=12" alt="" />
+                    <img src="https://i.pravatar.cc/302" alt="" />
                 </div>
                 <div className="mentor-card-name">
                     <h3>Salsa blablabla</h3>
@@ -70,7 +70,7 @@ function Mentor() {
             </div>
             <div className="mentor-card">
                 <div className="mentor-card-img">
-                    <img src="https://i.pravatar.cc/300?img=13" alt="" />
+                    <img src="https://i.pravatar.cc/301" alt="" />
                 </div>
                 <div className="mentor-card-name">
                     <h3>Amel songopitu</h3>
@@ -91,7 +91,7 @@ function Mentor() {
             </div>
             <div className="mentor-card">
                 <div className="mentor-card-img">
-                    <img src="https://i.pravatar.cc/300?img=14" alt="" />
+                    <img src="https://i.pravatar.cc/300" alt="" />
                 </div>
                 <div className="mentor-card-name">
                     <h3>Bambang wolulas</h3>

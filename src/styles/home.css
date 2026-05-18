@@ -142,7 +142,11 @@ body{
 
 .home-above-right img{
     width:100%;
-    max-width:150px;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    object-fit: cover;
+    max-width:200px;
 }
 
 .home-middle{
@@ -176,7 +180,7 @@ body{
 .home-middle-fitur-card,
 .home-middle-testimony-card{
     background:var(--primary);
-    padding:20px;
+    padding:18px;
     border-radius:20px;
     border: 1px solid var(--gray);
     box-shadow:var(--shadow);

@@ -12,8 +12,8 @@ function About() {
                 <li><Link to="/mentor">Mentor</Link></li>
                 <li><Link to="/class">Kelas</Link></li>
                 <li><Link to="/about">Tentang</Link></li>
-                <li><Link to="/contact">Contact</Link></li>
-                <li><Link to="/book">Book</Link></li>
+                <li><Link to="/contact">Kontak</Link></li>
+                <li><Link to="/book">Pesan</Link></li>
             </ul>
             <Link to="/login">Masuk Sekarang</Link>
         </nav>
@@ -76,17 +76,17 @@ function About() {
             <h2>Tim Kami</h2>
             <div className="about-team-list">
                 <div className="about-team-card">
-                    <img src="https://i.pravatar.cc/150?img=1" alt="team" />
+                    <img src="https://i.pravatar.cc/152" alt="team" />
                     <h3>Ahmad Fauzi</h3>
                     <p>Founder & CEO</p>
                 </div>
                 <div className="about-team-card">
-                    <img src="https://i.pravatar.cc/150?img=2" alt="team" />
+                    <img src="https://i.pravatar.cc/150" alt="team" />
                     <h3>Siti Aulia</h3>
                     <p>UI/UX Designer</p>
                 </div>
                 <div className="about-team-card">
-                    <img src="https://i.pravatar.cc/150?img=3" alt="team" />
+                    <img src="https://i.pravatar.cc/159" alt="team" />
                     <h3>Rizky Pratama</h3>
                     <p>Lead Mentor</p>
                 </div>
