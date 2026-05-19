@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.footer{
+    display:grid;
+    grid-template-columns:2fr 1fr 1fr;
+    gap:50px;
+    background:var(--dark);
+    color:var(--white);
+    padding:10px 100px;
+}
+
+.footer h2,
+.footer h3{
+    color: var(--white);
+}
+
+.footer p{
+    color:var(--gray);
+    font-size: 14px;
+}
+
+.footer p:hover {
+    color:var(--white);
+}
+
+.footer2{
+    display:grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap:8px 10px;
+}
+
+.footer2 h3{
+    grid-column:1 / -1;
+}
+
+.footer2 a{
+    text-decoration:none;
+    color:var(--gray);
+    font-size: 14px;
+    transition:0.3s;
+}
+
+.footer2 a:hover{
+    color:var(--white);
+}

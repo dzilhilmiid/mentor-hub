@@ -13,20 +13,6 @@ function Home () {
     }, [])
     return (
         <>
-    <header className="home-header">
-        <h1>MentorHub</h1>
-        <nav>
-            <ul>
-                <li><Link to="/">Home</Link></li>
-                <li><Link to="/mentor">Mentor</Link></li>
-                <li><Link to="/class">Kelas</Link></li>
-                <li><Link to="/about">Tentang</Link></li>
-                <li><Link to="/contact">Kontak</Link></li>
-                <li><Link to="/book">Pesan</Link></li>
-            </ul>
-            <Link to="/login">Masuk Sekarang</Link>
-        </nav>
-    </header>
 
     <section className="home">
         <div className="home-above">
@@ -97,27 +83,6 @@ function Home () {
         </div>
     </section>
 
-    <footer className="footer">
-        <div className="footer1">
-            <h2>MentorHub</h2>
-            <p>Platform yang menghubungkan mentee dengan mentor berpengalaman untuk mempercepat perkembangan karier dan skill.</p>
-        </div>
-        <div className="footer2">
-            <h3>Quick Link</h3>
-            <Link to="/">Home</Link>
-            <Link to="/mentor">Mentor</Link>
-            <Link to="/class">Kelas</Link>
-            <Link to="/about">Tentang</Link>
-            <Link to="/contact">Contact</Link>
-            <Link to="/book">Book</Link>
-        </div>
-        <div className="footer3">
-            <h3>Kontak</h3>
-            <p>📧 support@mentorhub.com</p>
-            <p>📱 +62 812-0000-0000</p>
-            <p>📍 Indonesia</p>
-        </div>
-    </footer>
 </>
     )
 }

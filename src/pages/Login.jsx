@@ -1,74 +1,66 @@
 import { Link } from "react-router-dom"
 import"../styles/login.css"
+import { useState } from "react"
+
 
 function Login() {
+    const [form, setForm] = useState({
+        email: "",
+        password: ""
+    })
+
+    const handleChange = (e) => {
+        setForm({
+            ...form,
+            [e.target.name]: e.target.value
+        })
+    }
+
+    const handleSubmit = async (e) => {
+        e.preventDefault()
+
+        const res = await fetch("http://localhost:5000/login", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(form)
+        })
+
+        const data = await res.json()
+
+        localStorage.setItem("user", JSON.stringify(data))
+        window.location.href = "/"
+
+        console.log(data)
+    }
+
     return(
         <>
-    <header class="login-header">
-        <h1>MentorHub</h1>
-        <nav>
-            <ul>
-               <li><Link to="/">Home</Link></li>
-                <li><Link to="/mentor">Mentor</Link></li>
-                <li><Link to="/class">Kelas</Link></li>
-                <li><Link to="/about">Tentang</Link></li>
-                <li><Link to="/contact">Kontak</Link></li>
-                <li><Link to="/book">Pesan</Link></li>
-            </ul>
-            <Link to="/register">Daftar Sekarang</Link>
-        </nav>
-    </header>
     <main>
-        <section class="login-form">
-            <div class="form-card">
-                <div class="form-header">
+        <section className="login-form">
+            <div className="form-card">
+                <div className="form-header">
                     <h1>Selamat Datang</h1>
                     <p>Masuk untuk melanjutkan ke MentorHub</p>
                 </div>
-                <form action="">
-                    <div class="form-group">
-                        <label for="">Email</label>
-                        <input type="email" id="email" placeholder="Masukkan Email" required />
+                <form onSubmit={handleSubmit}>
+                    <div className="form-group">
+                        <label htmlFor="">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Masukkan Email" onChange={handleChange} required />
                     </div>
-                    <div class="form-group">
-                        <label for="">Password</label>
-                        <input type="password" id="password" placeholder="Masukkan Password" />
-                    </div>
-                    <div class="form-group">
-                        <label for="">Position</label>
-                        <select name="" id="position">
-                            <option value="">-- Pilih Posisi --</option> 
-                            <option value="">Mentor</option> 
-                            <option value="">Mentee</option> 
-                        </select>
+                    <div className="form-group">
+                        <label htmlFor="">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Masukkan Password" onChange={handleChange} />
                     </div>
                     <button type="submit">Masuk</button>
                 </form>
-                <p>Dengan melanjutkan, Anda menyetujui syarat & ketentuan dan kebijakan privasi MentorHub.</p>
+                <p>
+                    Belum punya akun?{" "} <Link to="/register" className="register-link"> Register </Link>
+                </p>
             </div>
         </section>
     </main>
-    <footer class="footer">
-        <div class="footer1">
-            <h2>MentorHub</h2>
-            <p>Platform yang menghubungkan mentee dengan mentor berpengalaman untuk mempercepat perkembangan karier dan skill.</p>
-        </div>
-        <div class="footer2">
-            <h3>Quick Link</h3>
-            <a href="/">Home</a>
-            <a href="/mentor">Mentor</a>
-            <a href="/class">Kelas</a>
-            <a href="/about">Tentang</a>
-            <a href="/contact">Contact</a>
-            <a href="/book">Book</a>
-        </div>
-        <div class="footer3">
-            <h3>Kontak</h3>
-            <p>📧 support@mentorhub.com</p>
-            <p>📱 +62 812-0000-0000</p>
-            <p>📍 Indonesia</p>
-        </div>
-    </footer>
 </>
     )
 }

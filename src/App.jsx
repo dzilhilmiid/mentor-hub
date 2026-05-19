@@ -8,9 +8,14 @@ import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Book from "./pages/Book"
 
+import Header from "./components/Header"
+import Footer from "./components/Footer"
+
 function App() {
   return (
     <HashRouter>
+      <Header />
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
@@ -21,6 +26,8 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route path="/book" element={<Book />} />
       </Routes>
+
+      <Footer />
     </HashRouter>
   )
 }
