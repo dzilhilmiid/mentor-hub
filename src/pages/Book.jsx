@@ -9,6 +9,7 @@ function Book() {
     const [mentorName, setMentorName] = useState("")
     const [date, setDate] = useState("")
     const [duration, setDuration] = useState("")
+    const [payment, setPayment] = useState("")
 
     const platformFee = 10000 
 
@@ -76,17 +77,17 @@ function Book() {
                     <div className="payment-methods">
 
                         <label className="payment-card">
-                            <input type="radio" name="payment" />
+                            <input type="radio" name="payment" value="Transfer Bank" onChange={(e) => setPayment(e.target.value)} />
                             <span>💳 Transfer Bank</span>
                         </label>
 
                         <label className="payment-card">
-                            <input type="radio" name="payment" />
+                            <input type="radio" name="payment" value="E-Wallet" onChange={(e) => setPayment(e.target.value)} />
                             <span>📱 E-Wallet</span>
                         </label>
 
                         <label className="payment-card">
-                            <input type="radio" name="payment" />
+                            <input type="radio" name="payment" value="Virtual Account" onChange={(e) => setPayment(e.target.value)} />
                             <span>🏦 Virtual Account</span>
                         </label>
                     </div>
@@ -112,6 +113,10 @@ function Book() {
                 <div className="transaction-item">
                     <p>Tanggal Mentoring</p>
                     <span>{date || "-"}</span>
+                </div>
+                <div className="transaction-item">
+                    <p>Metode Pembayaran</p>
+                    <span>{payment || "-"}</span>
                 </div>
                 <div className="transaction-item">
                     <p>Mentor</p>
